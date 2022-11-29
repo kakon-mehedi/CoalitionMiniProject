@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&display=swap");
+
+:root {
+  --variableName: value;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Lato", sans-serif;
+  font-family: "Oswald", sans-serif; */
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.nav-logo-on-scroll {
+  display: none !important;
+}
+
+.nav-logo-on-scroll.active {
+  display: flex !important;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  font-family: lato;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.navbar-item {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding: 0 10px;
+  margin: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.mountain {
+  height: 90vh;
+  width: 100%;
+  background-image: url("./images/MOUNTAIN.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 6rem;
+  margin-bottom: 350px;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+
+.history {
+  height: 80vh;
+  width: 100%;
+  background-image: url("./images/HISTORY.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center top;
+  background-size: cover;
+}
+.history-title,
+.climb-title {
+  font-size: 8.5rem;
+  position: relative;
+  color: #414f6b8f;
+  font-family: "Oswald", sans-serif;
+}
+
+.history-title::after {
+  content: "HISTORY";
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 90px;
+  left: 0;
+  margin-left: 132px;
+  color: #414f6b;
+  opacity: 1 !important;
+}
+
+.history-desc,
+.climb-desc {
+  font-size: 1rem;
+  margin: 0 50px;
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #414f6be5;
+  min-height: 200px;
+  width: 100%;
+}
+
+.image-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  max-height: 135px;
+  max-width: 222px;
+  object-fit: cover;
+  margin: 10px 5px;
+}
+
+.circle-list {
+  display: flex;
+}
+
+.circle {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.circle.active {
+  background-color: white;
+}
+
+.climb-section {
+  display: flex;
+  align-items: center;
+}
+
+.climb-desc {
+  margin-left: 100px;
+}
+
+.climb-title::after {
+  content: "CLIMB";
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 90px;
+  left: 0;
+  margin-left: 148px;
+  color: #414f6b;
+  opacity: 1 !important;
+}
+
+.tab-schedule {
+  height: 60vh;
+  width: 100%;
+  background-image: url("./images/crow.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.tab-section {
+  background-color: #414f6b;
+  overflow: hidden;
+}
+
+.tab-list {
+  display: flex;
+}
+
+.tab-item {
+  color: #b0b4be;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.tab-link {
+  color: #b0b4be;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.tab-link.active {
+  background-color: #b0b4be;
+  color: #414f6b;
+  text-decoration: underline;
+}
+
+.tab-bg-image {
+  position: relative;
+}
+
+.schedule-section {
+  background-color: rgba(255, 255, 255, 0.649);
+  height: 230px;
+  width: 352px;
+  font-family: lato;
+  padding: 15px 30px;
+  margin-top: 100px;
+  position: absolute;
+  left: 30px;
+}
+
+.schedule-text {
+  font-size: 2rem;
+  font-family: oswald;
+  text-transform: uppercase;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+footer {
+  background-color: #414f6b;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  font-family: lato;
+  font-style: italic;
+  color: #63769d;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 32px;
+  width: 32px;
+  opacity: 0.5;
+}
+
+.logo-text {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  margin-left: 10px;
+  line-height: 20px;
+  font-size: 22px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.show-none {
+  display: none !important;
+}
