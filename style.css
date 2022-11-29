@@ -10,11 +10,6 @@
   padding: 0;
 }
 
-body {
-  /* font-family: "Lato", sans-serif;
-  font-family: "Oswald", sans-serif; */
-}
-
 .container {
   width: 60%;
   margin: 0 auto;
@@ -27,6 +22,22 @@ nav {
   background-color: transparent;
   display: flex;
   align-items: center;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+
+nav.active {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black !important;
 }
 
 .navbar {
@@ -45,7 +56,7 @@ nav {
   display: none !important;
 }
 
-.nav-logo-on-scroll.active {
+nav.active .nav-logo-on-scroll {
   display: flex !important;
   align-items: center;
 }
@@ -58,13 +69,18 @@ nav {
   font-size: 12px;
 }
 
-.navbar-item {
+nav .navbar-item {
   text-decoration: none;
   border-bottom: 1px solid white;
   padding: 0 10px;
   margin: 10px;
   color: white;
   text-transform: uppercase;
+}
+
+nav.active .navbar-item {
+  border-bottom: 1px solid black;
+  color: black;
 }
 
 .mountain {
@@ -274,6 +290,7 @@ footer {
 .footer-logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo-img {
