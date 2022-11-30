@@ -1,7 +1,7 @@
-const header1 = document.querySelector("#nav-logo-1");
-const header2 = document.querySelector("nav");
+const logo1 = document.querySelector("#nav-logo-1");
+const nav = document.querySelector("nav");
 
 window.addEventListener("scroll", function () {
-  header1.classList.toggle("show-none", window.scrollY > 50);
-  header2.classList.toggle("active", window.scrollY > 50);
+  logo1.classList.toggle("show-none", window.scrollY > 50);
+  nav.classList.toggle("active", window.scrollY > 50);
 });
